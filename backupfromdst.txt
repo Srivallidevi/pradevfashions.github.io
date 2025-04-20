@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pradev Fashions | Premium Knitwear Apparel Manufacturing</title>
+    <meta name="description" content="Pradev Fashions - Specialized knitwear manufacturers producing high-quality t-shirts, hoodies, sweaters, jerseys, co-ord sets, nightwear, track suits and other knitted garments">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="https://picsum.photos/50/50?random=logo" alt="Pradev Fashions Logo" class="h-10 mr-3">
+                    <h1 class="text-xl font-bold text-blue-900">Pradev Fashions</h1>
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#home" class="font-medium text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="#products" class="font-medium text-gray-700 hover:text-blue-600 transition">Products</a>
+                    <a href="#about" class="font-medium text-gray-700 hover:text-blue-600 transition">About Us</a>
+                    <a href="#process" class="font-medium text-gray-700 hover:text-blue-600 transition">Our Process</a>
+                    <a href="#contact" class="font-medium text-gray-700 hover:text-blue-600 transition">Contact</a>
+                </nav>
+                <button class="md:hidden text-gray-700">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6">Your Trusted Knitwear Manufacturing Partner</h2>
+                    <p class="text-xl mb-8">Specializing in premium quality knitted garments including t-shirts, hoodies, sweaters, and more with 15+ years of expertise.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-yellow-400 text-blue-900 font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition">Request a Quote</a>
+                        <a href="#products" class="border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition">View Products</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://picsum.photos/600/400?random=knitwear" alt="Pradev Fashions knitwear production" class="rounded-lg shadow-xl" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Knitwear Collections</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- T-Shirts -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=tshirt" alt="T-shirts manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">T-Shirts</h3>
+                        <p class="text-gray-600 mb-4">Premium quality cotton and blended fabric t-shirts with various neck styles and sleeve lengths.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+                
+                <!-- Hoodies -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=hoodie" alt="Hoodies manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Hoodies & Sweatshirts</h3>
+                        <p class="text-gray-600 mb-4">Custom hoodies with various fabric weights, pocket styles, and finishing options.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+                
+                <!-- Sweaters -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=sweater" alt="Sweaters manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Sweaters & Cardigans</h3>
+                        <p class="text-gray-600 mb-4">High-quality knitted sweaters in various stitch patterns and yarn compositions.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+                
+                <!-- Jerseys -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=jersey" alt="Jerseys manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Jerseys & Sportswear</h3>
+                        <p class="text-gray-600 mb-4">Performance-oriented knitted jerseys with moisture-wicking properties.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+                
+                <!-- Co-ord Sets -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=coord" alt="Co-ord sets manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Co-ord Sets</h3>
+                        <p class="text-gray-600 mb-4">Matching top and bottom sets in various knitted fabrics and designs.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+                
+                <!-- Nightwear -->
+                <div class="product-card bg-gray-50 rounded-lg overflow-hidden shadow-md transition duration-300">
+                    <img src="https://picsum.photos/400/300?random=nightwear" alt="Nightwear manufacturing" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2 text-blue-900">Nightwear & Loungewear</h3>
+                        <p class="text-gray-600 mb-4">Comfortable knitted sleepwear and loungewear collections.</p>
+                        <a href="#contact" class="text-blue-600 font-medium hover:underline">Get Samples</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <img src="https://picsum.photos/600/400?random=factory" alt="Pradev Fashions manufacturing facility" class="rounded-lg shadow-lg" loading="lazy">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold mb-6 text-blue-900">About Pradev Fashions</h2>
+                    <p class="text-gray-700 mb-4">Established in 2008, Pradev Fashions has grown to become a trusted name in knitwear apparel manufacturing, serving domestic and international brands with premium quality knitted garments.</p>
+                    <p class="text-gray-700 mb-6">Our 50,000 sq. ft. facility in Tiruppur, India houses state-of-the-art knitting machines and a skilled workforce dedicated to producing exceptional quality garments.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-industry text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900">15+ Years</h4>
+                                <p class="text-sm text-gray-600">Industry Experience</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-tshirt text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900">500K+</h4>
+                                <p class="text-sm text-gray-600">Garments Monthly</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-globe text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900">12+</h4>
+                                <p class="text-sm text-gray-600">Countries Served</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="bg-blue-100 p-3 rounded-full mr-3">
+                                <i class="fas fa-users text-blue-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-blue-900">250+</h4>
+                                <p class="text-sm text-gray-600">Skilled Employees</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#process" class="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">Our Manufacturing Process</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-blue-900">Our Manufacturing Process</h2>
+            <div class="relative">
+                <div class="hidden md:block absolute left-1/2 top-0 h-full w-1 bg-blue-200 transform -translate-x-1/2"></div>
+                <div class="space-y-12">
+                    <!-- Process Step 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-10 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold text-blue-900">Design & Development</h3>
+                            <p class="text-gray-600">Our design team works closely with clients to create technical specifications and patterns.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center md:w-1/2">
+                            <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <span class="font-bold">1</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-10 md:hidden">
+                            <h3 class="text-xl font-bold text-blue-900">Design & Development</h3>
+                            <p class="text-gray-600">Our design team works closely with clients to create technical specifications and patterns.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Step 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pl-10 md:order-last">
+                            <h3 class="text-xl font-bold text-blue-900">Fabric Knitting</h3>
+                            <p class="text-gray-600">High-quality yarns are knitted into fabric using modern circular and flat knitting machines.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center md:w-1/2">
+                            <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <span class="font-bold">2</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-10 md:hidden">
+                            <h3 class="text-xl font-bold text-blue-900">Fabric Knitting</h3>
+                            <p class="text-gray-600">High-quality yarns are knitted into fabric using modern circular and flat knitting machines.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Step 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-10 md:text-right mb-6 md:mb-0">
+                            <h3 class="text-xl font-bold text-blue-900">Cutting & Sewing</h3>
+                            <p class="text-gray-600">Precision cutting and expert stitching ensure perfect garment construction.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center md:w-1/2">
+                            <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <span class="font-bold">3</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-10 md:hidden">
+                            <h3 class="text-xl font-bold text-blue-900">Cutting & Sewing</h3>
+                            <p class="text-gray-600">Precision cutting and expert stitching ensure perfect garment construction.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Process Step 4 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pl-10 md:order-last">
+                            <h3 class="text-xl font-bold text-blue-900">Finishing & Quality Control</h3>
+                            <p class="text-gray-600">Each garment undergoes thorough inspection before packaging and shipping.</p>
+                        </div>
+                        <div class="hidden md:flex items-center justify-center md:w-1/2">
+                            <div class="bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <span class="font-bold">4</span>
+                            </div>
+                        </div>
+                        <div class="md:w-1/2 md:pr-10 md:hidden">
+                            <h3 class="text-xl font-bold text-blue-900">Finishing & Quality Control</h3>
+                            <p class="text-gray-600">Each garment undergoes thorough inspection before packaging and shipping.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 bg-blue-900 text-white p-8">
+                        <h3 class="text-2xl font-bold mb-4">Contact Pradev Fashions</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Our Factory</h4>
+                                    <p>19,20,Bhuvaneswari nagar,, Tirupur 641687, Tirupur, Tamilnadu 641687, India</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Call Us</h4>
+                                    <p>+91 9876543210</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Email Us</h4>
+                                    <p>info@pradevfashions.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-8">
+                            <h4 class="font-bold mb-3">Follow Us</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-white hover:text-yellow-400 transition"><i class="fab fa-facebook-f text-xl"></i></a>
+                                <a href="#" class="text-white hover:text-yellow-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+                                <a href="#" class="text-white hover:text-yellow-400 transition"><i class="fab fa-linkedin-in text-xl"></i></a>
+                                <a href="#" class="text-white hover:text-yellow-400 transition"><i class="fab fa-youtube text-xl"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-1/2 p-8">
+                        <h3 class="text-2xl font-bold mb-6 text-blue-900">Get In Touch</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <label for="name" class="block text-gray-700 font-medium mb-1">Your Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-gray-700 font-medium mb-1">Email Address</label>
+                                <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-gray-700 font-medium mb-1">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            </div>
+                            <div>
+                                <label for="product" class="block text-gray-700 font-medium mb-1">Product Interest</label>
+                                <select id="product" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                                    <option value="">Select a product</option>
+                                    <option value="tshirts">T-Shirts</option>
+                                    <option value="hoodies">Hoodies & Sweatshirts</option>
+                                    <option value="sweaters">Sweaters & Cardigans</option>
+                                    <option value="jerseys">Jerseys & Sportswear</option>
+                                    <option value="coords">Co-ord Sets</option>
+                                    <option value="nightwear">Nightwear & Loungewear</option>
+                                    <option value="tracksuits">Track Suits</option>
+                                    <option value="pants">Knitted Pants</option>
+                                    <option value="other">Other Knitwear</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-gray-700 font-medium mb-1">Your Message</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">Send Inquiry</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <div class="flex items-center">
+                        <img src="https://picsum.photos/40/40?random=logo" alt="Pradev Fashions Logo" class="h-8 mr-2">
+                        <h3 class="text-lg font-bold">Pradev Fashions</h3>
+                    </div>
+                    <p class="mt-2 text-sm">Premium knitwear apparel manufacturing since 2008</p>
+                </div>
+                <div class="text-sm">
+                    <p>&copy; 2023 Pradev Fashions. All rights reserved.</p>
+                    <div class="flex space-x-4 mt-2">
+                        <a href="#" class="hover:text-yellow-400 transition">Privacy Policy</a>
+                        <a href="#" class="hover:text-yellow-400 transition">Terms of Service</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button.md\\:hidden');
+            const nav = document.querySelector('nav ul');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+                nav.classList.toggle('flex');
+                nav.classList.toggle('flex-col');
+                nav.classList.toggle('absolute');
+                nav.classList.toggle('top-16');
+                nav.classList.toggle('left-0');
+                nav.classList.toggle('right-0');
+                nav.classList.toggle('bg-white');
+                nav.classList.toggle('p-4');
+                nav.classList.toggle('shadow-md');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
